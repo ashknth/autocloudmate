@@ -35,4 +35,4 @@ jobs:
 
       - name: Upload website files to S3
         run: |
-          aws s3 sync . s3://autocloudmate --delete --exclude ".git/*" --exclude "infra/*" --exclude ".github/*"
+          aws s3 sync . s3://autocloudmate.com --delete --exclude ".git/*" --exclude "infra/*" --exclude ".github/*"

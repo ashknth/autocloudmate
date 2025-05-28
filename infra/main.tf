@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 variable "bucket_name" {
-  default = "autocloudmate"
+  default = "autocloudmate.com"
 }
 
 variable "distribution_id" {

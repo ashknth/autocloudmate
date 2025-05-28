@@ -23,14 +23,16 @@
         <p>Description of your job role and achievements</p>
     </section>
     <link rel= "stylesheet" href= "style.css">
- 
- <section>
+  </body>
+   <section>
     <h2>Visitor Count</h2>
-    <p id="visitor-count">Loading...</p>
+    <p id="visitorcounter">Loading...</p>
 </section>
-    <footer>
-        <p>Visit my <a href="https://www.linkedin.com/in/yourprofile">LinkedIn</a>!</p>
-    </footer>
-  <script src="visitor-counter.js"></script>
-</body>
+<script>
+fetch('https://9uzaj7kq49.execute-api.us-east-1.amazonaws.com/default/visitorcounter')
+    .then(response => response.json())
+    .then(data => {
+    document.getElementById("visitorcounter").textContent = data["visitorcount"];
+  })
+</script>
 </html>

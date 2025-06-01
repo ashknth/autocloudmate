@@ -1,38 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Resume</title>
-    <link rel="stylesheet" href="styles.css">  <!-- Link to the CSS file -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Ashok Nath - Cloud Engineer Resume" />
+  <title>Ashok Nath | Cloud Engineer</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="assets/favicon.ico" />
 </head>
 <body>
-    <header>
-        <h1>My Resume</h1>
-    </header>
+  <header>
+    <div class="container">
+      <h1>Ashok Nath</h1>
+      <p>Cloud Engineer | Miami, FL</p>
+      <p><a href="mailto:ashoknath2080@gmail.com">ashoknath2080@gmail.com</a> | <a href="https://linkedin.com/in/ashoknth" target="_blank">LinkedIn</a> | <a href="https://ashoknath.com.np" target="_blank">Website</a></p>
+      <button id="theme-toggle">Toggle Theme</button>
+    </div>
+  </header>
 
-    <section>
-        <h2>Contact Information</h2>
-        <p>Email: example@example.com</p>
-        <p>Phone: 123-456-7890</p>
+  <main class="container">
+    <section id="summary">
+      <h2>Professional Summary</h2>
+      <p>Experienced and results-driven cloud engineer with expertise in AWS, DevOps, CI/CD, containerization, scripting, and monitoring tools like Datadog, Grafana, and Nagios. Skilled in deploying scalable and secure cloud-native applications.</p>
     </section>
 
-    <section>
-        <h2>Experience</h2>
-        <p>Job Title at XYZ Company</p>
-        <p>Description of your job role and achievements</p>
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul class="columns">
+        <li>AWS, Azure, Google Cloud</li>
+        <li>Docker, Kubernetes, Jenkins, Terraform</li>
+        <li>Python, Java, JavaScript, C/C++</li>
+        <li>MySQL, PostgreSQL, MongoDB</li>
+        <li>Datadog, Grafana, Nagios</li>
+        <li>Git, GitHub Actions, Agile</li>
+      </ul>
     </section>
-    <link rel= "stylesheet" href= "style.css">
-  </body>
-   <section>
-    <h2>Visitor Count As of Now:</h2>
+
+    <section id="experience">
+      <h2>Work Experience</h2>
+      <div class="job">
+        <h3>Associate AWS Cloud Engineer</h3>
+        <span>CodeRush Pvt. Ltd. — Jan 2023 – Aug 2023</span>
+        <ul>
+          <li>Deployed AWS infrastructure using EC2, Lambda, S3, and IAM</li>
+          <li>Built scalable solutions with S3, Kinesis, and Redshift</li>
+          <li>Created CI/CD pipelines with Jenkins and GitHub Actions</li>
+        </ul>
+      </div>
+      <div class="job">
+        <h3>Junior DevOps Engineer</h3>
+        <span>KSystem — Jun 2021 – Oct 2022</span>
+        <ul>
+          <li>Used GitHub Actions for workflow automation and deployments</li>
+          <li>Automated Linux server tasks with shell scripts and cron jobs</li>
+          <li>Configured and monitored Nagios XI and Datadog dashboards</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <p><strong>Atlantis University</strong> — Masters in Information Technology (Jan 2024 – May 2025)</p>
+      <p><strong>Pokhara University</strong> — Bachelors in Computer Engineering (Aug 2018 – Jul 2022)</p>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <ul>
+        <li><strong>Cloud Resume Website:</strong> Hosted on Amazon S3 with Route 53 and CloudFront – <a href="https://autocloudmate.com" target="_blank">autocloudmate.com</a></li>
+        <li><strong>CI/CD Pipeline:</strong> Automated project deployment using AWS CodePipeline, CodeBuild, and CodeDeploy</li>
+        <li><strong>WordPress on EC2:</strong> LAMP stack with RDS, Route 53, Certbot, and Nagios XI monitoring</li>
+        <li><strong>OCR Android App:</strong> Real-time image-to-text using Java, Tesseract OCR, Firebase, and SQLite</li>
+      </ul>
+    </section>
+
+    <section id="download">
+      <h2>Download Resume</h2>
+      <a class="button" href="assets/ashok_nath_Resume_cloud.pdf" download>Download PDF</a>
+    </section>
+      <section>
+    <h2>Total Visitors:</h2>
     <p id="visitorcounter">Loaded Visitors</p>
 </section>
-<script>
-fetch('https://9uzaj7kq49.execute-api.us-east-1.amazonaws.com/default/visitorcounter')
-    .then(response => response.json())
-    .then(data => {
-    document.getElementById("visitorcounter").textContent = data["visitorcount"];
-  })
-</script>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Ashok Nath. All rights reserved.</p>
+    </div>
+   
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
 </html>

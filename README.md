@@ -101,7 +101,7 @@ Simple, lightweight, and serverless with potential for future features: IP-based
 ## 📝 How to Deploy This Project
 Clone the repo:
 ```git
-git clone https://github.com/yourusername/aws-resume-site.git
+git clone https://github.com/ashknth/autocloudmate
 ```
 ```bash 
 cd aws-resume-site 
